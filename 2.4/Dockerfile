@@ -14,7 +14,7 @@ RUN yum update -y && \
 	yum clean all
 
 ENTRYPOINT ["/bin/httpd"]
-CMD ["-f", "/conf/httpd.conf"]
+#CMD ["-f", "/conf/httpd.conf"]
 
 # Expose ports.
 EXPOSE 80
