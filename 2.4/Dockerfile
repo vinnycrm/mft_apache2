@@ -12,6 +12,9 @@ MAINTAINER Vinaya C R M <vinay@shrigowri.com>
 RUN yum update -y && \
 	yum install -y httpd && \
 	yum clean all
+	
+# Copy config apache2
+COPY conf/ /conf/
 
 #ENTRYPOINT ["/bin/httpd"]
 CMD ["-f", "/conf/httpd.conf"]
