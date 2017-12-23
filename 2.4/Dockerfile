@@ -10,10 +10,10 @@ MAINTAINER Vinaya C R M <vinay@shrigowri.com>
 
 # Install
 RUN yum update -y && \
-	yum install httpd && \
+	yum install -y httpd && \
 	yum clean all
 
-ENTRYPOINT ["/bin/httpd"]
+#ENTRYPOINT ["/bin/httpd"]
 CMD ["-f", "/conf/httpd.conf"]
 
 # Expose ports.
