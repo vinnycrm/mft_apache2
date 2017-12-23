@@ -16,7 +16,7 @@ RUN yum update -y && \
 # Copy config apache2
 COPY conf/ /conf/
 
-#ENTRYPOINT ["/bin/httpd"]
+ENTRYPOINT ["/bin/httpd"]
 CMD ["-f", "/conf/httpd.conf"]
 
 # Expose ports.
