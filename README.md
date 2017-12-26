@@ -1,6 +1,6 @@
-# Apache HTTPD
+# dockerfiles-centos-httpd
 
-Apache httpd
+CentOS Dockerfile for Apache httpd
 
 
 ## Build
